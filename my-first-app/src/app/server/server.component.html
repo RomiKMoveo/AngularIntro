@@ -1,2 +1,6 @@
-<p>The Server Component</p>
+<button class="showSecret = !showSecret" (click)="onToggleDetails()">Display </button>
+<p *ngIf="showSecret">Secret password = romi</p>
+<div *ngFor="let logItem of log"
+    [ngStyle]="{backgroundColor: logItem >= 2 ? 'blue' : 'transparent'}"
+>{{ logItem }}</div>
 
